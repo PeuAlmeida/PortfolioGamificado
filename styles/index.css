@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'PixelOperator';
+    src: url(../assets/fonts/PixelOperator.ttf);
+}
+
+body {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'PixelOperator';
+    background: url('../assets/images/background1.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.content {
+    width: 70vw;
+    height: 90vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    box-shadow: 5px 3px 10px rgba(0, 0, 0, .5);
+    border: 3px solid rgba(255, 255, 255, 0.363);
+    border-radius: 1rem;
+    color: white;
+}
+
+.content__info {
+    width: 100%;
+    height: 60%;
+    display: flex;
+}
+
+.foto {
+    display: flex;
+    width: 40%;
+    border-bottom: 3px solid rgba(255, 255, 255, 0.363);
+    border-bottom-right-radius: 1rem;
+    padding: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.foto__perfil {
+    height: 79%;
+    width: 70%;
+    text-align: center;
+    padding: 1rem;
+    border: 1rem solid white;
+    border-top-left-radius: 5rem;
+    border-bottom-right-radius: 5rem;
+    
+}
+
+.content__info--principal {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 60%;
+    border-bottom: 3px solid rgba(255, 255, 255, 0.363);
+    border-left: 3px solid rgba(255, 255, 255, 0.363);
+    border-bottom-left-radius: 1rem;
+    padding: 1rem;
+    font-size: 1.2rem;
+    display: none;
+}
+
+.active__content {
+    display: flex;
+}
+
+.perfil__personal {
+    display: flex;
+    flex-direction: column;
+}
+
+.perfil__nome {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.perfil__idade, .perfil__experiencia {
+    font-size: 1.5rem;
+    margin-bottom: .5rem;
+}
+
+.perfil__lista--title {
+    margin-bottom: .5rem;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+.perfil__lista--item {
+    margin-bottom: .5rem;
+    color: rgb(211, 211, 211);
+    font-size: 1.5rem;
+}
+
+.redes-sociais__lista {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    margin-top: 1rem;
+    padding: 4rem;
+}
+
+.redes-sociais__lista--item--link {
+    text-decoration: none;
+    color: white;
+    font-size: 3rem;
+    transition: .3s;
+}
+
+.redes-sociais__lista--item--link:hover {
+    filter: brightness(.5);
+}
+
+.techs {
+    position: relative;
+    height: 25%;
+}
+
+.techs__arrow {
+    position: absolute;
+    left: 0;
+    top: 70%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem;
+}
+
+.techs__arrow--button {
+    font-size: 3rem;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.techs__arrow--button:hover {
+    filter: brightness(.5);
+}
+
+
+.tech__title {
+    border-right: 3px solid rgba(255, 255, 255, 0.363);
+    border-bottom: 3px solid rgba(255, 255, 255, 0.363);
+    border-bottom-right-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    padding: 1rem;
+}
+
+.tech__title--text {
+    font-size: 2rem;
+}
+
+.techs__content {
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    justify-content: space-evenly;
+    place-items: center;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.active {
+    display: grid;
+}
+
+
+.tech__button {
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer; 
+    transition: .3s;
+    
+}
+
+.tech__button:hover {
+    filter: brightness(.5);
+}
+
+.tech__button--img {
+    width: 50px;
+    height: 50px;
+    image-rendering: pixelated;
+}

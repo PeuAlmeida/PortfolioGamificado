@@ -1,0 +1,23 @@
+.techs__knowledge--title {
+
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.techs__knowledge--lista {
+    display: grid;
+    gap: 1rem;
+}
+
+.techs__knowledge--description {
+    filter: brightness(.7);
+    font-size: 2rem;
+    margin-bottom: .5rem;
+}
+
+.techs__knowledge--item{
+    font-size: 2rem;
+    filter: brightness(.7);
+    list-style-type: disc;
+    margin-left: 1.5rem;
+}
